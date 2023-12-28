@@ -41,13 +41,16 @@ while True:
             print("player: ", player)
             print("you win!")
 
-    play_again = input("Play again? (yes/no): ").lower()
+    while True:
+        play_again = input("Play again? (yes/no): ").lower()
+        if play_again == "no":
+            break
+        elif play_again == "yes":
+            break
+        else:
+            print("Invalid input. Please enter 'yes' or 'no'.")
 
     if play_again == "no":
         break
-    elif play_again == "yes":
-        continue
-    else:
-        print("Uh-oh something went wrong! Try again!")
 
 print("Buh-Byeee!")
